@@ -2,7 +2,7 @@
 *
 * 高阶函数 (Higher-order function)
 * 
-* */ 
+*/
 
 // 在 JavaScript 或者其他的语言中，都是一定拥有函数这个概念
 // 但并不是所有的编程语言都如 JavaScript 这般可以将函数赋值作为变量使用变量
