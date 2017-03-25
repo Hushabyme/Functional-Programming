@@ -62,12 +62,12 @@ joinElement('a', 'b', 'c');  // a b c
 
 面向对象系统：
 
-![面向对象系统](C:\Users\Haoran\Desktop\1.png)
+![1](E:\Functional_programming\JavaScript 函数式编程\01 - JavaScript 函数式编程简介\img\1.png)
 
 函数式编程系统：
 
-![函数式编程系统](C:\Users\Haoran\Desktop\2.png)
+![2](E:\Functional_programming\JavaScript 函数式编程\01 - JavaScript 函数式编程简介\img\2.png)
 
 你可以看出其中的差异来吗？
 
-简单的来说，面向对象的系统是将问题分解成不同的**“名词”**或对象，函数式的方法是将问题分解为多组的**“动词”**或函数。当然，它们同样地都是使用 **组合** 的方式构建更大的函数或者系统。
+简单的来说，面向对象的系统是将问题分解成不同的“名词”或对象，函数式的方法是将问题分解为多组的“动词”或函数。当然，它们同样地都是使用 **组合** 的方式构建更大的函数或者系统。
