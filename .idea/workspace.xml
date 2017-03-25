@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91e8190a-8d8e-4b1d-9581-d62523426dd4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/01 - forEach.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/02 - splat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/03 - unsplat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/04 - abstract.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/05 - nth.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/01 - Filter/filter.js" afterPath="$PROJECT_DIR$/Funfunfunction/01 - Filter/filter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/01 - Filter/index.html" afterPath="$PROJECT_DIR$/Funfunfunction/01 - Filter/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/02 - Map/index.html" afterPath="$PROJECT_DIR$/Funfunfunction/02 - Map/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/02 - Map/map.js" afterPath="$PROJECT_DIR$/Funfunfunction/02 - Map/map.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/03 - Reduce/index.html" afterPath="$PROJECT_DIR$/Funfunfunction/03 - Reduce/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/03 - Reduce/reduce.js" afterPath="$PROJECT_DIR$/Funfunfunction/03 - Reduce/reduce.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/04 - Reduce advanced/data.txt" afterPath="$PROJECT_DIR$/Funfunfunction/04 - Reduce advanced/data.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/04 - Reduce advanced/index.html" afterPath="$PROJECT_DIR$/Funfunfunction/04 - Reduce advanced/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/04 - Reduce advanced/reduce.js" afterPath="$PROJECT_DIR$/Funfunfunction/04 - Reduce advanced/reduce.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/05 - Currying/currying.js" afterPath="$PROJECT_DIR$/Funfunfunction/05 - Currying/currying.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/05 - Currying/index.html" afterPath="$PROJECT_DIR$/Funfunfunction/05 - Currying/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/06 - Recursion/index.html" afterPath="$PROJECT_DIR$/Funfunfunction/06 - Recursion/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/06 - Recursion/recursion.js" afterPath="$PROJECT_DIR$/Funfunfunction/06 - Recursion/recursion.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/07 - Promise/app.js" afterPath="$PROJECT_DIR$/Funfunfunction/07 - Promise/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/07 - Promise/images/1.jpg" afterPath="$PROJECT_DIR$/Funfunfunction/07 - Promise/images/1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/07 - Promise/images/2.jpg" afterPath="$PROJECT_DIR$/Funfunfunction/07 - Promise/images/2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/07 - Promise/images/3.jpg" afterPath="$PROJECT_DIR$/Funfunfunction/07 - Promise/images/3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/07 - Promise/index.html" afterPath="$PROJECT_DIR$/Funfunfunction/07 - Promise/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/07 - Promise/normal.js" afterPath="$PROJECT_DIR$/Funfunfunction/07 - Promise/normal.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/07 - Promise/promise.js" afterPath="$PROJECT_DIR$/Funfunfunction/07 - Promise/promise.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/08 - Factor/factor.js" afterPath="$PROJECT_DIR$/Funfunfunction/08 - Factor/factor.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/08 - Factor/index.html" afterPath="$PROJECT_DIR$/Funfunfunction/08 - Factor/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/Readme.md" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/Readme.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,16 +28,38 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
               <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <folding>
+                <marker date="1490423414239" expanded="true" signature="19:89" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03 - unsplat.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/03 - unsplat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03 - unsplat.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/03 - unsplat.js">
+      <file leaf-file-name="04 - abstract.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/04 - abstract.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="50" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="05 - nth.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/05 - nth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -109,6 +109,8 @@
         <option value="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/splat.js" />
         <option value="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/02 - splat.js" />
         <option value="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/03 - unsplat.js" />
+        <option value="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/04 - abstract.js" />
+        <option value="$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/05 - nth.js" />
       </list>
     </option>
   </component>
@@ -275,12 +277,12 @@
       <updated>1489405142139</updated>
       <workItem from="1489405143826" duration="4642000" />
       <workItem from="1489455985372" duration="17873000" />
-      <workItem from="1490422141265" duration="2228000" />
+      <workItem from="1490422141265" duration="4136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24743000" />
+    <option name="totallyTimeSpent" value="26651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
@@ -539,7 +541,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1490423414239" expanded="true" signature="19:89" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -547,6 +551,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/04 - abstract.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/01 - JavaScript 函数式编程简介/05 - nth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding />
         </state>
       </provider>

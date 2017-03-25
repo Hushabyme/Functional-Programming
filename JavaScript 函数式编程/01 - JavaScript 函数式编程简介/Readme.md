@@ -54,6 +54,8 @@ joinElement('a', 'b', 'c');  // a b c
 
 # 1.2 开始函数式编程
 
+### 1. 什么是函数式编程
+
 我们可以使用一句直白的话来描述函数式编程：
 
 > 函数式编程通过使用函数来将值转换成抽象单元，接着用于构建软件系统。
@@ -62,12 +64,117 @@ joinElement('a', 'b', 'c');  // a b c
 
 面向对象系统：
 
-![1](E:\Functional_programming\JavaScript 函数式编程\01 - JavaScript 函数式编程简介\img\1.png)
+![1](https://github.com/Hushabyme/Functional_programming/blob/master/JavaScript%20%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/01%20-%20JavaScript%20%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E7%AE%80%E4%BB%8B/img/1.png)
 
 函数式编程系统：
 
-![2](E:\Functional_programming\JavaScript 函数式编程\01 - JavaScript 函数式编程简介\img\2.png)
+![2](https://github.com/Hushabyme/Functional_programming/blob/master/JavaScript%20%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/01%20-%20JavaScript%20%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E7%AE%80%E4%BB%8B/img/2.png)
 
 你可以看出其中的差异来吗？
 
 简单的来说，面向对象的系统是将问题分解成不同的“名词”或对象，函数式的方法是将问题分解为多组的“动词”或函数。当然，它们同样地都是使用 **组合** 的方式构建更大的函数或者系统。
+
+JavaScript 同时支持这两种模式，因此，我们不会将它们放在对立面看待。相反，它们还可以混合(mixin)使用。
+
+### 2. 什么是抽象
+
+接着，我们来讲讲什么是“抽象”。
+
+> 抽象方法是指隐藏了实现细节的函数
+
+举一个最简单的例子吧，比如我们想要打印出错误信息。
+
+```javascript
+console.log(throw new Error('something wrong'));
+```
+
+以上代码没有问题，但是如果我们想要其它的错误信息怎么办？
+
+我们此时可以将错误信息抽象成一个又一个函数
+
+```javascript
+const fail = thing => {throw new Error(thing)};
+
+const warn = thing => {console.log(['Waring:', thing].join(' '))};
+
+const note = thing => {console.log(['Note:', thing].join(' '))};
+```
+
+这样就一目了然，我们需要哪一个，就可以调用哪一个了。
+
+### 3. 封装和隐藏
+
+多年以来，我们都说，封装是面向对象的基石。
+
+> 在面向对象中，封装是指一种将若干个数据与用来操纵它们的特定操作包装起来的方式。
+
+而 JavaScript 中，封装可以使用一种叫做 **闭包** 的特性来实现，这里先不讲。
+
+### 4.以函数为行为单位
+
+我们使用一个例子就可以说明问题：
+
+```javascript
+const str = 'Hello';
+str[1];  // e
+
+const arr = [1, 2, 3];
+arr[1];  // 2
+```
+
+我们可以看出，上面的两个虽然是不同的数据类型，但是都有着共性，因此，我们就可以将其抽象出来形成一个函数：
+
+```javascript
+const nth = (value, n) => value[n];
+
+nth([1, 2, 3], 2);  // 3
+nth('Hello', 2);  // l
+```
+
+但是，假如你传入一个无效的数，就会抛出异常。那么接着，我们需要定义上面的 `n`：
+
+```javascript
+const index = (length) => {
+  return length >=0 && length < Number.MAX_SAFE_INTEGER && length % 2 === 0;
+};
+
+const nth = (value, n) => {
+  if(index(n)) return value[n];
+};
+```
+
+这样，我们就定义了更加健壮的 `nth` 函数，当然，这里没有解决传入的 `n` 为 字符串类型时的情况，如果你感兴趣，也可以自己来创建，现在，我们有了 `nth` 函数，我们就可以再来定义一个 `last` 函数，用于返回传入的值的最后一个元素：
+
+```javascript
+const last = value => nth(value, value.length - 1);
+
+last([1, 2, 3, 4]);  // 4
+```
+
+你看，我们是不是又在 `nth` 函数的基础之上又构建了一个函数呀，这就是函数式编程的魅力所在，同时也是 `underscore` 和 `lodash` 等函数式编程库的核心思想。
+
+我们再定义一个函数吧，用于区分 `null` 和 `undefined` 与其它数：
+
+```javascript
+const existy = value => value != null;
+```
+
+使用 `!=` 这种松散类型的写法，就可以区别了，但是如果要区分 `null` 和 `undefined` 怎么办呢？那就再定义两个函数：
+
+```javascript
+isUndefined = value => value === undefined;
+isNull = value => value === null;
+```
+
+不瞒你说，这就是 `lodash` 和 `underscore` 库的源码，不信，你可以去查一查。
+
+没错，这就是函数式编程中最基础的东西 —— *一切都是以函数为基本单位*。
+
+# 总结
+
+函数式编程包括以下技术：
+
+- 确定抽象，并为其构建函数。
+- 利用已有的函数来构建更复杂的抽象。
+- 通过将现有的函数传给其它的函数来构建更加复杂的抽象。
+
