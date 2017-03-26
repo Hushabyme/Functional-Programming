@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91e8190a-8d8e-4b1d-9581-d62523426dd4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/05 - 由函数构建函数/currying.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/06 - 递归/01 - recursion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/06 - 递归/02 - recursion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/06 - 递归/03 - deepClone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/07 - 纯度、不变性和更改策略/01 - add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript 函数式编程/07 - 纯度、不变性和更改策略/02 - container.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,7 +21,28 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="01 - add.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/07 - 纯度、不变性和更改策略/01 - add.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02 - container.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/07 - 纯度、不变性和更改策略/02 - container.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,6 +104,8 @@
         <option value="$PROJECT_DIR$/JavaScript 函数式编程/06 - 递归/recursion.js" />
         <option value="$PROJECT_DIR$/JavaScript 函数式编程/06 - 递归/02 - recursion.js" />
         <option value="$PROJECT_DIR$/JavaScript 函数式编程/06 - 递归/03 - deepClone.js" />
+        <option value="$PROJECT_DIR$/JavaScript 函数式编程/07 - 纯度、不变性和更改策略/01 - add.js" />
+        <option value="$PROJECT_DIR$/JavaScript 函数式编程/07 - 纯度、不变性和更改策略/02 - container.js" />
       </list>
     </option>
   </component>
@@ -165,7 +186,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="06 - 递归" />
+              <option name="myItemId" value="07 - 纯度、不变性和更改策略" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,17 +307,18 @@
       <workItem from="1489455985372" duration="17873000" />
       <workItem from="1490422141265" duration="13000000" />
       <workItem from="1490442282914" duration="234000" />
-      <workItem from="1490496884867" duration="4510000" />
+      <workItem from="1490496884867" duration="7019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40259000" />
+    <option name="totallyTimeSpent" value="42768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -649,6 +671,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/07 - 纯度、不变性和更改策略/01 - add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript 函数式编程/07 - 纯度、不变性和更改策略/02 - container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding />
         </state>
       </provider>
