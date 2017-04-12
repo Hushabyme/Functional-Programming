@@ -54,24 +54,26 @@ function addEvent (type, element, fun) {
 
 > 惰性函数表示函数执行的分支只会在函数第一次调用时执行。在第一次调用过程中，该函数会被覆盖为另一个按照合适方式执行的函数，这样任何对原函数的调用就不用再经过执行的分支了
 
-我们使用惰性函数来重写上面的函数，因为每一次调用时，它都会执行一次判断，这会减慢程序运行的时间：
+因为每一次调用时，它都会执行一次判断，这会减慢程序运行的时间。
+
+接下来我们使用惰性函数来重写上面的函数：
 
 ```javascript
-function addEvent (type, element, fun) {
+function addEvent (type, element, fn) {
     if (element.addEventListener) {
-        addEvent = function (type, element, fun) {
-            element.addEventListener(type, fun, false);
+        addEvent = function (type, element, fn) {
+            element.addEventListener(type, fn, false);
         }
     } else if(element.attachEvent){
-        addEvent = function (type, element, fun) {
-            element.attachEvent('on' + type, fun);
+        addEvent = function (type, element, fn) {
+            element.attachEvent('on' + type, fn);
         }
     } else{
-        addEvent = function (type, element, fun) {
-            element['on' + type] = fun;
+        addEvent = function (type, element, fn) {
+            element['on' + type] = fn;
         }
     }
-    return addEvent(type, element, fun);
+    return addEvent(type, element, fn);
 }
 ```
 
